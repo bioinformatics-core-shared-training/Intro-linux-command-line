@@ -12,5 +12,4 @@ of electronic whiteboard is provided for participants to post questions to the
 Trainers. 
 
 [Command-line lessons](https://datacarpentry.org/shell-genomics/).  
-[Copying files to local PC using __scp__]().  
-[Using __screen__ to keep session running on remote computer]().  
+[Using __screen__ to keep session running on remote computer](screen.md).  

@@ -1,15 +1,15 @@
-## Staying Connected to the Cloud
+## Staying Connected to the Remote computer/Cloud
 
-Depending on how you connect to the cloud, you may have processes and jobs that are
+Depending on how you connect to a Remote computer/the cloud, you may have processes and jobs that are
 running, and will need to continue running for some time. If you are connecting to your
-cloud desktop via VNC, jobs you start will continue to run. If you are connecting via SSH,
+Remote computer/cloud desktop via VNC, jobs you start will continue to run. If you are connecting via SSH,
 if you end the SSH connection (e.g. you exit your SSH session, you lose your connection
 to the internet, you close your laptop, etc.), jobs that are still running when you
-disconnect will be killed. There are a few ways to keep cloud processes running in the background.
+disconnect will be killed. There are a few ways to keep Remote computer/cloud processes running in the background.
 Many times when we refer to a background process we are talking about what is
 [described at this tutorial](http://www.cyberciti.biz/faq/linux-command-line-run-in-background/) -
 running a command and returning to shell prompt. Here we describe a program that will
-allow us to run our entire shell and keep that process running even if we disconnect: `tmux`. If you don't have `tmux` on your system, you should still be able to use `screen`. This is another program that has mostly the same capabilities as `tmux`. It's a lot older, though, so can be more clunky to use; however, it is likely to be available on any cloud system you encounter.
+allow us to run our entire shell and keep that process running even if we disconnect: `tmux`. If you don't have `tmux` on your system, you should still be able to use `screen`. This is another program that has mostly the same capabilities as `tmux`. It's a lot older, though, so can be more clunky to use; however, it is likely to be available on any Remote computer/cloud system you encounter.
 
 In both `tmux` and `screen`, you open a 'session'. A 'session' can be thought of as a window for `tmux` or `screen`, you might open an terminal to do one thing on the a computer and then open a new terminal to work on another task at the command line. 
 

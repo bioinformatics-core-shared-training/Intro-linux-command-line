@@ -10,3 +10,7 @@ target audience are scientists performing bioinformatical analyses of genomic da
 An [Etherpad](https://etherpad.wikimedia.org/p/cruk_cl_linux_2019) which is a form 
 of electronic whiteboard is provided for participants to post questions to the
 Trainers. 
+
+[Command-line lessons](https://datacarpentry.org/shell-genomics/).  
+[Copying files to local PC using __scp__]().  
+[Using __screen__ to keep session running on remote computer]().  

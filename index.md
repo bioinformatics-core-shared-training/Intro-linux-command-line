@@ -2,7 +2,7 @@ This course is based upon the materials provided by the Data Carpentry community
 Specfically the Genomics track (which is in development)
 We use a locally-installed VM to provide a learning environment and where this causes
 disjoints with the DC AWS learning environment your trainers will assist you.   
-[Connecting to the courses Virtual machine (VM)](logon.md).   
+[Connecting to the courses Virtual machine - VM](logon.md).   
 
 The course is taught by staff from the CRUK Cambridge Institutes IT service and 
 the Bioinformatics Core. We are interested in the Genomics track as our main

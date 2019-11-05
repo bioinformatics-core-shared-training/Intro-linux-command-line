@@ -3,7 +3,7 @@ Specfically the Genomics track (which is in development)
 We use a locally-installed VM to provide a learning environment and where this causes
 disjoints with the DC AWS learning environment your trainers will assist you.
 
-[Connecting to the courses Virtual machine](logon.md).   
+[Connecting to the courses Virtual machine]().   
 
 
 The course is taught by staff from the CRUK Cambridge Institutes IT service and 

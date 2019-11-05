@@ -3,10 +3,6 @@
 1.
 
 
----
-title: "Logging onto VM"
-teaching: 5
-exercises: 5
 questions:
 - How do I connect to an VM?
 objectives:

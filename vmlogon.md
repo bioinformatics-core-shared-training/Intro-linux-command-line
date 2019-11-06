@@ -13,28 +13,6 @@ keypoints:
 - Logging off an instance is not the same as turning off an instance
 ---
 
-<script language="javascript" type="text/javascript">
-function set_page_view_defaults() {
-    document.getElementById('div_aws_win').style.display = 'block';
-    document.getElementById('div_aws_unix').style.display = 'none';
-};
-
-function change_content_by_platform(form_control){
-    if (!form_control || document.getElementById(form_control).value == 'aws_win') {
-        set_page_view_defaults();
-    } else if (document.getElementById(form_control).value == 'aws_unix') {
-        document.getElementById('div_aws_win').style.display = 'none';
-        document.getElementById('div_aws_unix').style.display = 'block';
-        document.getElementById('div_hpc').style.display = 'none';
-        document.getElementById('div_cyverse').style.display = 'none';
-    } else {
-        alert("Error: Missing platform value for 'change_content_by_platform()' script!");
-    }
-}
-
-window.onload = set_page_view_defaults;
-</script>
-
 ## Important Note
 
 This lesson covers how to log into, and out of, an virtual machine instance.
@@ -62,12 +40,7 @@ operating system, but sometimes requires additional software.
 
 ## Logging onto a virtual machine
 
-**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> AWS_UNIX </option><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option></select>**
-
-
-<div id="div_aws_win" style="display:block" markdown="1">
-
-#### Connecting using PC
+#### Connecting using Windows PC
 
 *Prerequisites*: You must have an SSH client. There are several free options but you should have installed [PuTTY.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) at the begining of the workshop, and we're going to continue using that.
 
@@ -93,11 +66,6 @@ operating system, but sometimes requires additional software.
     ![](../fig/putty_screenshot_3.png)
 
 You should now be connected!
-
-</div>
-
-
-<div id="div_aws_unix" style="display:block" markdown="1">
 
 
 #### Connecting using Mac/Linux
@@ -135,7 +103,6 @@ Mac and Linux operating systems will already have terminals installed.
 
 You should now be connected!
 
-</div>
 
 ## Logging off a virtual machine
 

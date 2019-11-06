@@ -3,15 +3,6 @@
 1.
 
 
-questions:
-- How do I connect to an VM?
-objectives:
-- Log onto to a running instance
-- Log off from a running instance
-keypoints:
-- You can use one set of log-in credentials for many instances
-- Logging off an instance is not the same as turning off an instance
----
 
 ## Important Note
 

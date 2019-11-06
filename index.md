@@ -1,3 +1,4 @@
+## https://tinyurl.com/cruk-linux
 This course is based upon the materials provided by the Data Carpentry community.
 Specfically the Genomics track (which is in development)
 We use a locally-installed VM to provide a learning environment and where this causes

@@ -41,20 +41,20 @@ operating system, but sometimes requires additional software.
 
     *Keep the default selection 'SSH' and Port (22)*
 
-    ![](../fig/putty_screenshot_1.png)
+    ![](images/putty_screenshot_1.png)
 
 2. Click 'Open' 
     
     You will be presented with a security warning
 
-    ![](../fig/putty_screenshot_2.png)
+    ![](images/putty_screenshot_2.png)
 
 3. Select 'Yes' to continue to connect
 3. In the final step, you will be asked to provide a login and password
     
     **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. `****) or moving cursors. Just continue typing
 
-    ![](../fig/putty_screenshot_3.png)
+    ![](images/putty_screenshot_3.png)
 
 You should now be connected!
 
@@ -67,7 +67,7 @@ Mac and Linux operating systems will already have terminals installed.
 
     Simply search for 'Terminal' and/or look for the terminal icon
 
-    ![terminal icon](../fig/terminal.png)
+    ![terminal icon](images/terminal.png)
 
 2. Type the following command substituting `ip_address` by the IP address your instructor will provide (or the IP address of an instance you have provisioned yourself)
 

@@ -1,10 +1,4 @@
-### How to log onto the courses Virtual machine from your Mac or Windows computer
-
-1.
-
-
-
-## Important Note
+## How to log onto the courses Virtual machine from your Mac or Windows computer
 
 This lesson covers how to log into, and out of, an virtual machine instance.
 
@@ -29,7 +23,13 @@ with a secure way to use a [shell](http://swcarpentry.github.io/shell-novice). I
 the shell will be running on a remote machine. This protocol is available for every
 operating system, but sometimes requires additional software.
 
-## Logging onto a virtual machine
+## Logging onto the course virtual machine
+
+### Username will be training1 to trainingn (These will be assigned to you at start of course
+### along with the password for that username)
+### The machine that you will be connecting to is cruktraining.cruk.cam.ac.uk
+### Shortened machine name is ''
+### e.g. ssh training5@cruktraining.cruk.cam.ac.uk
 
 #### Connecting using Windows PC
 

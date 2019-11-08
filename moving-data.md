@@ -1,10 +1,10 @@
 ## Moving and Downloading Data
 
-So far, we've worked with data that is pre-loaded on the instance in the cloud. Usually, however,
+So far, we've worked with data that is pre-loaded on the Virtual machine. Usually, however,
 most analyses begin with moving data onto the instance. Below we'll show you some commands to 
-download data onto your instance, or to move data between your computer and the cloud.
+download data onto your instance, or to move data between your computer and the VM.
 
-### Getting data from the cloud
+### Getting data from remote computers
 
 There are two programs that will download data from a remote server to your local
 (or remote) machine: ``wget`` and ``curl``. They were designed to do slightly different
@@ -84,9 +84,8 @@ download the page instead of showing it to us **and** specifies that it should s
 file using the same name it had on the server: species_EnsemblBacteria.txt
 
 It's important to note that both ``curl`` and ``wget`` download to the computer that the
-command line belongs to. So, if you are logged into AWS on the command line and execute
-the ``curl`` command above in the AWS terminal, the file will be downloaded to your AWS
-machine, not your local one.
+command line belongs to. So, if you are logged into our VM on the command line and execute
+the ``curl`` command above in the VM terminal, the file will be downloaded to the VM, not your local one.
 
 ### Moving files between your laptop and your instance
 
@@ -96,17 +95,11 @@ to start the transfer locally. **This means if you're typing into a terminal, th
 should not be logged into your instance, it should be showing your local computer. If you're
 using a transfer program, it needs to be installed on your local machine, not your instance.**
 
-## Transferring Data Between your Local Machine and the Cloud
+## Transferring Data Between your Local Machine and a remote machine
 
 These directions are platform specific, so please follow the instructions for your system:
 
-**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="unix" id="id_unix" selected> UNIX </option><option value="win" id="id_win" selected> Windows </option></select>**
-
-
-
-<div id="div_unix" style="display:block" markdown="1">
-
-### Uploading Data to your Virtual Machine with scp
+### UNIX/MacOS - Uploading Data to your Virtual Machine with scp
 
 `scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
 between computers. The simplest way to use `scp` is to run it in your local terminal,
@@ -118,17 +111,17 @@ scp <file I want to move> <where I want to move it>
 {: .bash}
 
 Note that you are always running `scp` locally, but that *doesn't* mean that
-you can only move files from your local computer. In order to move a file from your local computer to an AWS instance, the command would look like this:
+you can only move files from your local computer. In order to move a file from your local computer to the VM, the command would look like this:
 
 ~~~
-$ scp <local file> <AWS instance>
+$ scp <local file> <VM instance>
 ~~~
 {: .bash}
 
 To move it back to your local computer, you re-order the `to` and `from` fields:
 
 ~~~
-$ scp <AWS instance> <local file>
+$ scp <VM instance> <local file>
 ~~~
 {: .bash}
 
@@ -161,12 +154,9 @@ $ scp dcuser@ip.address:/home/dcuser/shell_data/untrimmed_fastq/scripted_bad_rea
 {: .bash}
 
 Remember that in both instances, the command is run from your local machine, we've just flipped the order of the to and from parts of the command.
-</div>
 
 
-<div id="div_win" style="display:block" markdown="1">
-
-### Uploading Data to your Virtual Machine with PSCP
+### Windows PC - Uploading Data to your Virtual Machine with PSCP
 
 If you're using a PC, we recommend you use the *PSCP* program. This program is from the same suite of
 tools as the PuTTY program we have been using to connect.
@@ -184,7 +174,7 @@ go to your start menu/search enter the term **'cmd'**; you will be able to start
 ~~~
 {: .bash}
 
-5. Locate a file on your computer that you wish to upload (be sure you know the path). Then upload it to your remote machine **(you will need to know your AMI instance address (which starts with ec2), and login credentials)**. You will be prompted to enter a password, and then your upload will begin. **(make sure you substitute 'your-pc-username' for your actual pc username and 'ec2-54-88-126-85.compute-1.amazonaws.com' with your AMI instance address)**
+5. Locate a file on your computer that you wish to upload (be sure you know the path). Then upload it to your remote machine **(you will need to know your VM instance name, and login credentials)**. You will be prompted to enter a password, and then your upload will begin. **(make sure you substitute 'your-pc-username' for your actual pc username and 'VM name' with your VM instance address)**
 
 ~~~
 C:\User\your-pc-username\Downloads> pscp.exe local_file.txt dcuser@ec2-54-88-126-85.compute-1.amazonaws.com:/home/dcuser/
@@ -194,7 +184,7 @@ C:\User\your-pc-username\Downloads> pscp.exe local_file.txt dcuser@ec2-54-88-126
 ### Downloading Data from your Virtual Machine with PSCP
 
 1. Follow the instructions in the Upload section to download (if needed) and access the *PSCP* program (steps 1-3)
-2. Download the text file using the following command **(make sure you substitute 'your-pc-username' for your actual pc username and 'ec2-54-88-126-85.compute-1.amazonaws.com' with your AMI instance address)**
+2. Download the text file using the following command **(make sure you substitute 'your-pc-username' for your actual pc username and 'VM name' with your instance address)**
 
 ~~~
 C:\User\your-pc-username\Downloads> pscp.exe dcuser@ec2-54-88-126-85.compute-1.amazonaws.com:/home/dcuser/shell_data/untrimmed_fastq/scripted_bad_reads.txt.

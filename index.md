@@ -6,7 +6,7 @@ disjoints with the DC AWS learning environment your trainers will assist you.
 
 - [Connecting to the courses Virtual machine](vmlogon.md).  
 - [Using __screen__ to keep session running on remote computer](screen.md). 
-- [Moving between your computer and the VM](moving-data.md).   
+- [Moving files between your computer and the VM](moving-data.md).   
 
 The course is taught by staff from the CRUK Cambridge Institutes IT service and 
 the Bioinformatics Core. We are interested in the Genomics track as our main

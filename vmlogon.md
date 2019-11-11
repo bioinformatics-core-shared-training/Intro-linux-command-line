@@ -28,7 +28,7 @@ operating system, but sometimes requires additional software.
 ### Username will be training1 to trainingn (These will be assigned to you at start of course
 ### along with the password for that username)
 ### The machine that you will be connecting to is cruktraining.cruk.cam.ac.uk
-### Shortened machine name is ''
+## Shortened machine name is '10.20.222.90'
 ### e.g. ssh training5@cruktraining.cruk.cam.ac.uk
 
 #### Connecting using Windows PC

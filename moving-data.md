@@ -192,5 +192,3 @@ C:\User\your-pc-username\Downloads> pscp.exe dcuser@ec2-54-88-126-85.compute-1.a
 C:\User\your-pc-username\Downloads
 ~~~
 {: .bash}
-
-</div>
